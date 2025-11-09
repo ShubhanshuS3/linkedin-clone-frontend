@@ -1,16 +1,60 @@
-# React + Vite
+# LinkedIn Clone - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of the LinkedIn Clone web application.  
+It is built using **React (Vite)** and interacts with the backend REST API for user authentication and post management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 **Frontend (Deployed on Netlify/Vercel):** [https://linkedin-clone-yourname.netlify.app](https://linkedin-clone-yourname.netlify.app)
 
-## React Compiler
+🔗 **Backend API:** [https://linkedin-clone-backend.onrender.com](https://linkedin-clone-backend.onrender.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Features
+- User login and signup pages  
+- Create and view posts (feed)  
+- Responsive UI built with React  
+- Fetches data from live Node.js + MongoDB backend  
+- Protected routes using JWT authentication  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Tech Stack
+- **React (Vite)**
+- **Axios** – for API communication
+- **React Router DOM** – for navigation
+- **CSS / Tailwind** – (if you used it, else remove)
+- **Environment Variables** via Vite
+
+---
+
+## ⚙️ Environment Variables
+Create a `.env` file in the root of your frontend folder:
+
+```env
+VITE_API_URL=https://linkedin-clone-backend.onrender.com
+
+🏗️ Installation & Setup
+# 1. Clone the repository
+git clone https://github.com/<your-username>/linkedin-clone-frontend.git
+
+# 2. Move into the folder
+cd linkedin-clone-frontend
+
+# 3. Install dependencies
+npm install
+
+# 4. Run locally
+npm run dev
+📁 Folder Structure
+src/
+ ├── components/    # Reusable UI components
+ ├── pages/         # Login, Signup, Feed pages
+ ├── services/      # API configuration (Axios)
+ ├── contexts/      # Auth Context (if used)
+ ├── App.jsx        # Main App component
+ └── main.jsx       # Entry file
+
+
